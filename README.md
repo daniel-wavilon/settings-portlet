@@ -4,6 +4,16 @@ Specification of JSON objects for Wavilon
 
 _Beautify JSON_
 
+scripts/beautify_json.py
+
+examples/example.json          -> /tmp/beautify_json/examples_example.json
+
+scripts/beautify_json.py -o
+
+File ./examples/example.json        has been beautified
+
+_Beautify JSON (old)_
+
 You need some dependencies for python. Run this and tell me what is missing, so that I can do document it.
 
 scripts/beautify_json.sh
