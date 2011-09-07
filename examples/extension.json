@@ -1,0 +1,10 @@
+{
+    "org": 1, 
+    "_rev": "1-b45932cb69dd8905d3ab60692fa41076", 
+    "_id": "5c88f04801a12cdea702ed8961005a6f", 
+    "type": "exten", 
+    "properties": {
+        "dest": "info_wavilon/gonvaled@gmail.com", 
+        "chan": "Gtalk"
+    }
+}

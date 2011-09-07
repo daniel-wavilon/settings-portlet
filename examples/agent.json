@@ -1,0 +1,12 @@
+{
+    "outputs": {
+        "exten": "2105e5ceef242a614c584ce02b000679"
+    }, 
+    "_rev": "6-d43cff0e0c168316990fc59065497351", 
+    "org": 1, 
+    "_id": "2105e5ceef242a614c584ce02b0004dd", 
+    "type": "agent", 
+    "properties": {
+        "liferayuser": 123456789
+    }
+}

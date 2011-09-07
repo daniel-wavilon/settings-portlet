@@ -38,12 +38,12 @@ def beautify_all(overwrite=False):
       h = open(f, "w")
       h.write(beautiful_json)
       h.write("\n")
-      print "File %-30s has been beautified" % (f)
+      print "File %-50s has been beautified" % (f)
     else:
       tmp = tempfile.NamedTemporaryFile(delete=False)
       tmp.write(beautiful_json)
       tmp.write("\n")
-      print "%-30s > %s" % (f, tmp.name)
+      print "%-50s > %s" % (f, tmp.name)
 
 def usage():
     print __doc__
