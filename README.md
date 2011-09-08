@@ -1,40 +1,38 @@
 Specification of JSON objects for Wavilon
 
-## Some notes
+## Set up git to use this repository
 
-_Beautify JSON_
+_Setup your ssh key_
 
-scripts/beautify_json.py
+Account Settings -> SSH Public Key -> Add public key
 
-examples/example.json          -> /tmp/beautify_json/examples_example.json
+Title: anything you want
+Key: the full content of your ~/.ssh/id_rsa.pub
 
-scripts/beautify_json.py -o
+_Make sure you can log in to github_
 
-File ./examples/example.json        has been beautified
+ssh -T git@github.com
+Hi <user>! You've successfully authenticated, but GitHub does not provide shell access.
 
-_Beautify JSON (old)_
+_Fork this repository_
 
-You need some dependencies for python. Run this and tell me what is missing, so that I can do document it.
+This repo gives you only pull access. To make changes, you need to fork this repo and work with your private copy.
 
-scripts/beautify_json.sh
+_Clone this repository locally_
 
-And this will produce temporary files with your JSON beautified.
+git clone git@github.com:<your user>/settings-portlet.git
 
-examples/example.json          -> /tmp/beautify_json/examples_example.json
+_Create a remote branch, and track it locally_
 
-Copy them if you like it.
+* git push origin origin:refs/heads/<branch_name>
+* git checkout -b <branch_name> origin/<branch_name>
 
-cp /tmp/beautify_json/examples_example.json examples/example.json
+_Make changes, and push them when you are ready_
 
-If you are a brave man, you can run:
-
-scripts/beautify_json.sh overwrite
-
-And this will beautify everything for you.
-
-_Blah blah_
-
-* point
-* point
-* point
+* Edit some files, until you are ready.
+* Check the status of your repository: git status
+* Stage the files that you want to commit: git add <files>
+* Commit your changes locally: git commit -m "Your message"
+* Check your log: git log
+* Push your changes: git push
 
