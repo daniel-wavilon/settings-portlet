@@ -1,0 +1,56 @@
+{
+    "description": "Example JSON schema",
+    "type": "object",
+    "properties": {
+        "outputs": {
+            "description": "",
+            "type": "",
+            "required": true,
+            "properties" : {
+                "exten": {
+                    "description": "UUID linking to the extension",
+                    "type": "string",
+                    "required": true,
+                    "pattern" : "^[a-f0-9]*$"
+                }
+            }
+        }
+        "_rev": {
+            "description": "CouchDB revision id",
+            "type": "string",
+            "required": true,
+            "pattern" : "^[0-9]*-[a-f0-9]*$"
+        }
+        "org": {
+            "description": "Id of the organization where this agent belongs",
+            "type": "integer",
+            "required": true,
+        }
+        "_id": {
+            "description": "CouchDB UUID of the document",
+            "type": "string",
+            "required": true,
+            "pattern" : "^[a-f0-9]*$"
+        }
+        "type": {
+            "description": "Property describing this object as 'agent'",
+            "type": "string",
+            "required": true,
+            "pattern" : "agent"
+        }
+        "properties": {
+            "description": "Other properties of this agent",
+            "type": "object",
+            "required": true,
+            "properties" : {
+                "liferayuser": {
+                    "description": "Liferay ID associated to this agent",
+                    "type": "integer",
+                    "required": true,
+                }
+                "additionalProperties" : true
+            }
+        }
+    }
+    "additionalProperties" : false
+}

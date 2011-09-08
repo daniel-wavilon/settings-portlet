@@ -1,4 +1,50 @@
+* Beautify JSON
+
+#+BEGIN_SRC sh
+scripts/beautify_json.py
+#+END_SRC
+
+#+BEGIN_EXAMPLE
+examples/example.json          -> /tmp/beautify_json/examples_example.json
+#+END_EXAMPLE
+
+#+BEGIN_SRC sh
+scripts/beautify_json.py -o
+#+END_SRC
+
+#+BEGIN_EXAMPLE
+File ./examples/example.json        has been beautified
+#+END_EXAMPLE
+
+* Beautify JSON (old)
+
+You need some dependencies for python. Run this and tell me what is missing, so that I can do document it.
+#+BEGIN_SRC sh
+scripts/beautify_json.sh
+#+END_SRC
+
+And this will produce temporary files with your JSON beautified.
+#+BEGIN_EXAMPLE
+examples/example.json          -> /tmp/beautify_json/examples_example.json
+#+END_EXAMPLE
+
+Copy them if you like it.
+#+BEGIN_SRC sh
+cp /tmp/beautify_json/examples_example.json examples/example.json
+#+END_SRC
+
+If you are a brave man, you can run:
+#+BEGIN_SRC sh
+scripts/beautify_json.sh overwrite
+#+END_SRC
+
+And this will beautify everything for you.
+
 * Links
 
   [[http://jsonlint.com/][JSON Link: online json beautifier]]
+
+Specification of JSON objects for Wavilon
+
+Some notes
 
